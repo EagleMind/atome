@@ -3,19 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blue Page with Rounded Bottom Corners</title>
+    <title>Atome</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-<body class="background-img">
-<div >
-    <nav class="background-blue py-10 px-28">
+<body >
+<div class="curved-background">
+    <nav class="background-blue py-10 px-8  lg:pl-10">
         <div class="container mx-auto flex justify-between ">
-            <!-- Navbar Items -->
-            <ul class="flex space-x-4 items-center flex items-center justify-center">
+            <img src="assets/logo-home.svg">
+            <button class="text-white text-3xl focus:outline-none lg:hidden">
+                <img src="assets/toggler.svg">
+               </button>
+            <ul class="hidden lg:flex lg:items-center lg:w-auto  space-x-4  lg:justify-center">
 
-                <li><img src="assets/logo-home.svg"></li>
                 <li><a href="#" class="text-white hover:text-gray-300 font-rubik font-bold">Programmes</a></li>
                 <li><a href="#" class="text-white hover:text-gray-300">Principal</a></li>
                 <li><a href="#" class="text-white hover:text-gray-300">Points De Vente</a></li>
@@ -24,40 +26,51 @@
                 <li><a href="#" class="text-white hover:text-gray-300">Blog</a></li>
 
             </ul>
-            <!-- Logo or Brand -->
-            <div class="text-white font-bold text-xl items-center flex items-center justify-center">
+            <div class="hidden lg:block text-white font-bold text-xl items-center  items-center justify-center">
 
                 <button class="border-solid border-2 border-sky-500 background-blue hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full mr-5 w-150 text-xs">
                     Se connecter
                 </button>
                 <button class="border-solid border-2 border-sky-500 background-blue hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full mr-5 w-150 text-xs">
                     Inscription gratuite
+                </button>
+                <button>
+                    <img src="assets/glove.png" width="23">
                 </button>
             </div>
 
         </div>
     </nav>
     <div class="flex flex-col md:flex-row md:items-start md:space-x-8 md:ml-12">
-        <div class="w-1/2 flex  items-start flex-col space-y-8 ml-12">
+        <div class="md:w-1/2 flex  items-start flex-col space-y-8 ml-12">
            <div class="flex  w-50	">
-               <span class="font-rubik font-bold" style="color: #F1BB31; font-size: 41.73px">Une éducation efficace et agréable !</span>
+               <span class="font-rubik font-bold title-font" >Une éducation efficace et agréable !</span>
            </div>
             <div class="flex w-full	justify-center">
                 <span class="font-rubik font-medium" style="color: white; font-size: 14.64px">La plateforme Atome offre aux étudiants de l'enseignement de base un enseignement efficace qui allie la richesse du matériel scientifique à une interaction ludique afin d'obtenir des résultats académiques avancés et de développer la passion. L'apprentissage de votre enfant</span>
             </div>
-            <div class="flex w-full	justify-center">
+            <div class="lg:flex hidden  flex w-full	justify-center">
                 <button class="border-solid border-2 border-red-600 bg-red-600	 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-full mr-5 w-150 text-xs">
                     Se connecter
                 </button>
                 <button class="border-solid border-2 border-sky-500 background-blue hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full mr-5 w-150 text-xs">
                     Inscription gratuite
                 </button>
+
             </div>
         </div>
-        <div class="w-1/2 flex justify-center items-start">
+        <div class="md:w-1/2 flex justify-center items-start">
             <img src="assets/home-page.svg" alt="Image" class="max-w-full h-auto" style="width: 80%">
         </div>
 
+    </div>
+    <div class="lg:hidden lg:block  flex w-full	justify-center mt-5	">
+        <button class="border-solid border-2 border-red-600 bg-red-600	 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-full mr-5 w-150 text-xs">
+            Se connecter
+        </button>
+        <button class="border-solid border-2 border-sky-500 background-blue hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full mr-5 w-150 text-xs">
+            Inscription gratuite
+        </button>
     </div>
     <div class="flex items-end justify-center" style="height: 20vh">
         <div class="flex">
